@@ -1,0 +1,124 @@
+/* Apply a background image to the entire page */
+body {
+  background: url("questionnarebg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(6px); /* Subtle blur effect */
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Styling the questionnaire container */
+.questionnaire-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.85); /* Slight transparency for a soft effect */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 500px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Header styling for Medicine Reminder */
+.medicine-reminder-header {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  color: #37474f;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Plus icon beside the header */
+.medicine-reminder-header .plus-icon {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #42a5f5; /* Same color as the button to maintain consistency */
+}
+
+/* Styling the questionnaire title */
+.questionnaire-container h2 {
+  text-align: center;
+  color: #37474f; /* Darker blue-gray for contrast */
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Form styling */
+.questionnaire-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label styling */
+.questionnaire-form label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #455a64; /* Slightly dark text for readability */
+}
+
+/* Input and select styling */
+.questionnaire-form input,
+.questionnaire-form select {
+  padding: 12px;
+  border: 1px solid #b0bec5;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.questionnaire-form input:focus,
+.questionnaire-form select:focus {
+  border-color: #64b5f6;
+  box-shadow: 0 0 5px rgba(100, 181, 246, 0.5);
+  outline: none;
+}
+
+/* Add Medicine Button with Plus Icon */
+.add-medicine-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #42a5f5;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  gap: 8px;
+}
+
+.add-medicine-btn:hover {
+  background: #1e88e5;
+}
+
+/* Plus icon styling */
+.add-medicine-btn::after {
+  content: "+";
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+/* Smooth scrolling for the form */
+.questionnaire-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.questionnaire-container::-webkit-scrollbar-thumb {
+  background: #90caf9;
+  border-radius: 10px;
+}
+
+.questionnaire-container::-webkit-scrollbar-thumb:hover {
+  background: #64b5f6;
+}

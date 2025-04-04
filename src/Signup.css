@@ -1,0 +1,105 @@
+/* Main Signup Container */
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+.signup-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Form Layout */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Fields */
+.signup-form input, .age-gender-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Input Focus */
+.signup-form input:focus, .age-gender-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Signup Button */
+.signup-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #0056b3;
+}
+
+/* Back Button */
+.back-btn {
+  background: #6c757d;
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #545b62;
+}
+
+/* Form for Age and Gender */
+.age-gender-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Select Dropdown */
+.age-gender-form select {
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 15px;
+  }
+
+  .signup-btn, .back-btn {
+    font-size: 16px;
+  }
+}

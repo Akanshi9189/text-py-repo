@@ -1,0 +1,66 @@
+.landing-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("landingpagebg..jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background: #ddd;
+  }
+  
+  p {
+    margin-top: 15px;
+  }
+  
+  p span {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  p span:hover {
+    text-decoration: underline;
+  }
+  
+  small {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  
